@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="CSSLightbox"
+    Version="1.0.0.0"
+    Publisher="CN=arsingh" />
+
+  <mp:PhoneIdentity PhoneProductId="4f648926-8cd3-4a01-bd19-bf03a0134afd" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Deployer</DisplayName>
+    <PublisherDisplayName>arsingh</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application
+      Id="App"
+      StartPage="http://win10webapp.azurewebsites.net">
+
+      <uap:VisualElements
+        DisplayName="CSS Lightbox"
+        Description="CSS Lightbox"
+        BackgroundColor="#464646"
+        Square150x150Logo="images\Logo.png"
+        Square44x44Logo="images\SmallLogo.png">
+
+      </uap:VisualElements>
+    <uap:ApplicationContentUriRules>
+      <uap:Rule Match="http://win10webapp.azurewebsites.net/*" Type="include" WindowsRuntimeAccess="all" />
+    </uap:ApplicationContentUriRules>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+
+</Package>
