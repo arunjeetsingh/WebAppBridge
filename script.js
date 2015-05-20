@@ -4,10 +4,10 @@ $(document).ready(function () {
     var preventClick = false;
     var weblinkToShare = "";
 
-    //if (typeof Windows != undefined) {
-    //    var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
-    //    dataTransferManager.addEventListener("datarequested", dataRequested);
-    //}
+    if (typeof Windows != "undefined") {
+        var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+        dataTransferManager.addEventListener("datarequested", dataRequested);
+    }
 
     function dataRequested(e) {
         var request = e.request;
@@ -79,7 +79,7 @@ $(document).ready(function () {
             /* To build the URL of the image. */
             /* The id of the image is appended as a hash #pic-123 */
             weblinkToShare = location.href.replace(location.hash, '') + '#' + ui.draggable.attr('id');            
-            if (typeof Windows != undefined) {
+            if (typeof Windows != "undefined") {
                 Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
             }
             else {
