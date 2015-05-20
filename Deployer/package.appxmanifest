@@ -37,6 +37,7 @@
         BackgroundColor="#464646"
         Square150x150Logo="images\Logo.png"
         Square44x44Logo="images\SmallLogo.png">
+        <uap:SplashScreen BackgroundColor="#00b2f0" Image="Assets\Splash-sdk.png" />
 
       </uap:VisualElements>
     <uap:ApplicationContentUriRules>

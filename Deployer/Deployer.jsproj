@@ -55,6 +55,11 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="assets\smalltile-sdk.png" />
+    <Content Include="assets\splash-sdk.png" />
+    <Content Include="assets\squaretile-sdk.png" />
+    <Content Include="assets\storelogo-sdk.png" />
+    <Content Include="assets\tile-sdk.png" />
     <Content Include="default.html" />
     <None Include="Deployer_TemporaryKey.pfx" />
   </ItemGroup>
