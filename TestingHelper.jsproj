@@ -104,6 +104,7 @@
     <Content Include="Content\themes\ui-darkness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\ui-darkness\jquery-ui-1.8.16.custom.css" />
     <Content Include="Content\themes\ui-darkness\jquery-ui-1.8.23.custom.css" />
+    <Content Include="Content\themes\ui-darkness\jquery-ui.css" />
     <Content Include="Content\themes\ui-darkness\jquery.ui.accordion.css" />
     <Content Include="Content\themes\ui-darkness\jquery.ui.all.css" />
     <Content Include="Content\themes\ui-darkness\jquery.ui.autocomplete.css" />
