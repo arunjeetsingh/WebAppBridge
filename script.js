@@ -80,7 +80,6 @@ $(document).ready(function () {
             /* The id of the image is appended as a hash #pic-123 */
             weblinkToShare = location.href.replace(location.hash, '') + '#' + ui.draggable.attr('id');            
             if (typeof Windows != undefined) {
-                weblinkToShare = "http://www.bing.com";
                 Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
             }
             else {
