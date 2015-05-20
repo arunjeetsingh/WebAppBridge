@@ -4,10 +4,10 @@ $(document).ready(function () {
     var preventClick = false;
     var weblinkToShare = "";
 
-    if (typeof Windows != undefined) {
-        var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
-        dataTransferManager.addEventListener("datarequested", dataRequested);
-    }
+    //if (typeof Windows != undefined) {
+    //    var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+    //    dataTransferManager.addEventListener("datarequested", dataRequested);
+    //}
 
     function dataRequested(e) {
         var request = e.request;
