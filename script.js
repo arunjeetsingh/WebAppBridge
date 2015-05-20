@@ -75,14 +75,17 @@ $(document).ready(function () {
     /* Converting the share box into a droppable: */
     $('.drop-box').droppable({
         hoverClass: 'active',
-        drop: function (event, ui) {
-            /* To build the URL of the image. */
-            /* The id of the image is appended as a hash #pic-123 */
-            weblinkToShare = location.href.replace(location.hash, '') + '#' + ui.draggable.attr('id');            
+        drop: function (event, ui) {            
             if (typeof Windows != "undefined") {
+                /* To build the URL of the image. */
+                /* The id of the image is appended as a hash #pic-123 */
+                weblinkToShare = 'https://win10webapp.azurewebsites.net/img/original/1-california-surfing.jpg';
                 Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
             }
             else {
+                /* To build the URL of the image. */
+                /* The id of the image is appended as a hash #pic-123 */
+                weblinkToShare = location.href.replace(location.hash, '') + '#' + ui.draggable.attr('id');
                 $('#url').val(weblinkToShare);
                 $('#modal').dialog('open');
             }
