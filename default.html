@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>An Awesome CSS3 Lightbox Gallery With jQuery | Tutorialzine demo</title>
+
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" href="Content/themes/ui-darkness/jquery.ui.all.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.2.6.css" />
+
+
+    <script type="text/javascript" src="Scripts/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div id="main">
+        <p id="orig">View the <a href="http://tutorialzine.com/2009/11/hovering-gallery-css3-jquery/" target="_blank">original tutorial &raquo;</a></p>
+        <h1>An Awesome CSS3 Lightbox Gallery</h1>
+        <h2>Drag the pics around to share them</h2>
+
+        <hr />
+
+        <div id="gallery">
+
+
+            <div id="pic-1" class="pic" style="top:0px;left:0px;background:url(img/thumbs/1-california-surfing.jpg) no-repeat 50% 50%; -moz-transform:rotate(0deg); -webkit-transform:rotate(0deg);">
+                <a class="fancybox" rel="fncbx" href="img/original/1-california-surfing.jpg" target="_blank">'california-surfing'</a>
+            </div>
+
+            <div class="drop-box">
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="container tutorial-info">
+            This is a tutorialzine demo. View the <a href="http://tutorialzine.com/2009/11/hovering-gallery-css3-jquery/" target="_blank">original tutorial</a>, or download the <a href="demo.zip">source files</a>.
+        </div>
+    </div>
+
+    <!-- This is later converted to the modal window with the url of the image: -->
+
+    <div id="modal" title="Share this picture">
+        <form action="">
+            <fieldset>
+                <label for="url">URL of the image</label>
+                <input type="text" name="url" id="url" class="text ui-widget-content ui-corner-all" onfocus="this.select()" />
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+</html>
